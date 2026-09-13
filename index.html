@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Diri - Farah Diva Mumtazah</title>
+
+    <meta name="description"
+        content="Halaman profil diri Farah Diva Mumtazah, mahasiswa Informatika UIN Sunan Gunung Djati Bandung.">
+
+    <meta property="og:title" content="Profil Diri - Farah Diva Mumtazah">
+    <meta property="og:description"
+        content="Profil diri Farah Diva Mumtazah dan mata kuliah semester ini.">
+    <meta property="og:image" content="foto.jpg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="karakter">🌷 🧸 💜</div>
+
+        <h1>Profil Diri</h1>
+        <p>Mahasiswa Informatika</p>
+    </header>
+
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#" onclick="tampilkanHalaman(0)">Profil</a>
+        <a href="#" onclick="tampilkanHalaman(1)">Biodata</a>
+        <a href="#" onclick="tampilkanHalaman(2)">Mata Kuliah</a>
+    </nav>
+
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- ================= PROFIL ================= -->
+        <section class="halaman aktif">
+
+            <h2>Profil Saya</h2>
+
+            <img src="foto.jpg"
+                alt="Foto profil Farah Diva Mumtazah">
+
+            <h3>Farah Diva Mumtazah</h3>
+
+            <p>
+                Halo, saya Farah Diva Mumtazah. Saya merupakan mahasiswa
+                Program Studi Informatika di UIN Sunan Gunung Djati Bandung.
+                Saya tertarik dengan dunia teknologi, pemrograman,
+                dan pengembangan website.
+            </p>
+
+            <div class="hiasan">
+                ♡ ✨ ♡ ✨ ♡
+            </div>
+
+            <button onclick="nextHalaman()">
+                NEXT →
+            </button>
+
+        </section>
+
+
+        <!-- ================= BIODATA ================= -->
+        <section class="halaman">
+
+            <h2>Biodata</h2>
+
+            <div class="biodata-item">
+                <strong>Nama</strong>
+                <span>Farah Diva Mumtazah</span>
+            </div>
+
+            <div class="biodata-item">
+                <strong>NIM</strong>
+                <span>1247050131</span>
+            </div>
+
+            <div class="biodata-item">
+                <strong>Program Studi</strong>
+                <span>Informatika</span>
+            </div>
+
+            <div class="biodata-item">
+                <strong>Universitas</strong>
+                <span>UIN Sunan Gunung Djati Bandung</span>
+            </div>
+
+            <div class="tombol">
+
+                <button onclick="halamanSebelumnya()">
+                    ← BACK
+                </button>
+
+                <button onclick="nextHalaman()">
+                    NEXT →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MATA KULIAH ================= -->
+        <section class="halaman">
+
+            <h2>Mata Kuliah Semester Ini</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Manajemen Basis Data</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Jaringan Komputer</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Pengembangan Aplikasi Web</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Interaksi Manusia dan Komputer</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Intelegensia Buatan</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Manajemen Proyek Perangkat Lunak</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Pengembangan Aplikasi Mobile</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>ICT dan Islam</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr class="total">
+                        <th colspan="2">Total SKS</th>
+                        <th>23</th>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <div class="tombol">
+
+                <button onclick="halamanSebelumnya()">
+                    ← BACK
+                </button>
+
+                <button onclick="nextHalaman()">
+                    NEXT →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LINK ================= -->
+        <section class="halaman">
+
+            <h2>Informasi</h2>
+
+            <p>
+                Untuk informasi lebih lanjut mengenai kampus,
+                kamu bisa mengunjungi website resmi UIN Sunan
+                Gunung Djati Bandung.
+            </p>
+
+            <a class="link-kampus"
+                href="https://uinsgd.ac.id/"
+                target="_blank">
+                🌸 Website UIN Sunan Gunung Djati Bandung
+            </a>
+
+
+            <div class="tombol">
+
+                <button onclick="halamanSebelumnya()">
+                    ← BACK
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>♡ Terima kasih sudah berkunjung ♡</p>
+        <p>&copy; 2026 Farah Diva Mumtazah</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

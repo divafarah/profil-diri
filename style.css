@@ -1,0 +1,391 @@
+/* ==============================
+   DASAR
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #51445f;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            #eadcff 0%,
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            #ffdff0 0%,
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #faf6ff,
+            #fff7fb
+        );
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    text-align: center;
+    padding: 40px 20px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #cdb4e9,
+            #e6c5e8,
+            #f4c8dc
+        );
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    box-shadow:
+        0 8px 25px rgba(145, 111, 170, 0.18);
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #5d4771;
+    font-size: 40px;
+}
+
+header p {
+    margin: 5px;
+    color: #755e82;
+    font-size: 18px;
+}
+
+.karakter {
+    font-size: 30px;
+}
+
+
+/* ==============================
+   NAVIGASI
+============================== */
+
+nav {
+    width: fit-content;
+    margin: 25px auto;
+    padding: 12px 25px;
+
+    background: white;
+    border-radius: 30px;
+
+    box-shadow:
+        0 5px 18px rgba(120, 90, 140, 0.12);
+}
+
+nav a {
+    color: #76558d;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #c47ba9;
+}
+
+
+/* ==============================
+   KONTEN
+============================== */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.halaman {
+    display: none;
+
+    margin: 30px 0;
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 28px;
+    border: 2px solid #eadcf4;
+
+    box-shadow:
+        0 8px 25px rgba(126, 94, 150, 0.10);
+
+    text-align: center;
+}
+
+
+/* halaman yang sedang aktif */
+
+.halaman.aktif {
+    display: block;
+}
+
+
+/* ==============================
+   JUDUL
+============================== */
+
+h2 {
+    color: #76558d;
+    margin-top: 0;
+
+    border-bottom: 2px dashed #dfc9eb;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #a16b9d;
+    font-size: 23px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   FOTO
+============================== */
+
+.halaman img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 7px solid #ead7f3;
+
+    box-shadow:
+        0 8px 20px rgba(132, 94, 155, 0.20);
+}
+
+
+/* ==============================
+   BIODATA
+============================== */
+
+.biodata-item {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 12px 0;
+    padding: 15px 20px;
+
+    background: #faf4ff;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+.biodata-item strong {
+    color: #815f99;
+}
+
+
+/* ==============================
+   TABEL
+============================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background: white;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th {
+    padding: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #bfa2d9,
+            #dba8c9
+        );
+
+    color: white;
+}
+
+td {
+    padding: 13px;
+
+    border: 1px solid #eadcf1;
+
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #fbf4ff;
+}
+
+tbody tr:hover {
+    background: #f8e7f4;
+}
+
+.total th {
+    background: #a98bc2;
+}
+
+
+/* ==============================
+   TOMBOL NEXT / BACK
+============================== */
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b99ad4,
+            #d8a9c4
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(140, 100, 160, 0.20);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(140, 100, 160, 0.30);
+}
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* ==============================
+   LINK
+============================== */
+
+.link-kampus {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #a05f96;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-kampus:hover {
+    color: #714b85;
+}
+
+
+/* ==============================
+   HIASAN
+============================== */
+
+.hiasan {
+    margin-top: 20px;
+
+    color: #c58db5;
+
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d8c1eb,
+            #f0c8dd
+        );
+
+    color: #665272;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        width: 90%;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .halaman {
+        padding: 22px;
+    }
+
+    .biodata-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
