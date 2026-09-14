@@ -1,0 +1,882 @@
+/* =========================================
+   DASAR
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    color: #5b4968;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            #ead8ff 0%,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 15%,
+            #ffd9ed 0%,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 80% 85%,
+            #e8d8ff 0%,
+            transparent 25%
+        ),
+
+        linear-gradient(
+            135deg,
+            #faf5ff,
+            #fff5fa,
+            #f8f0ff
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    text-align: center;
+
+    padding: 40px 20px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #cbb1e9,
+            #e3bde8,
+            #f4c6df
+        );
+
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+
+    box-shadow:
+        0 10px 30px rgba(130, 91, 155, 0.18);
+}
+
+header h1 {
+    margin: 8px 0;
+
+    color: #60466f;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-style: italic;
+}
+
+header p {
+    margin: 5px;
+
+    color: #765d83;
+
+    font-size: 17px;
+}
+
+.hiasan-atas {
+    font-size: 27px;
+
+    letter-spacing: 7px;
+}
+
+.hiasan-bawah {
+    margin-top: 12px;
+
+    color: #876496;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   NAVIGASI PILL
+========================================= */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    width: fit-content;
+
+    margin: 24px auto;
+
+    padding: 7px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid #e5c9ef;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 6px 20px rgba(120, 88, 145, 0.12);
+}
+
+nav a {
+    padding: 9px 22px;
+
+    color: #76558d;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #a987c9,
+            #cb8fbd
+        );
+
+    color: white;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   HALAMAN / SLIDE
+========================================= */
+
+.halaman {
+    display: none;
+
+    margin: 25px 0;
+
+    padding: 38px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    border: 2px solid #ead4f3;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 12px 35px rgba(126, 94, 150, 0.12);
+
+    text-align: center;
+
+    animation: muncul 0.45s ease;
+}
+
+.halaman.aktif {
+    display: block;
+}
+
+
+@keyframes muncul {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   JUDUL
+========================================= */
+
+.bintang {
+    margin-bottom: 8px;
+
+    color: #bd83bd;
+
+    font-size: 21px;
+
+    letter-spacing: 5px;
+}
+
+h2 {
+    margin-top: 0;
+
+    color: #75528b;
+
+    font-family: Georgia, serif;
+
+    font-size: 29px;
+
+    font-style: italic;
+}
+
+h3 {
+    color: #a3669d;
+
+    font-size: 22px;
+}
+
+.subjudul {
+    color: #9a819e;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   HIASAN
+========================================= */
+
+.hiasan {
+    margin: 18px 0;
+
+    color: #c387b4;
+
+    font-size: 20px;
+
+    letter-spacing: 7px;
+}
+
+
+/* =========================================
+   HALAMAN PROFIL
+========================================= */
+
+.profil-layout {
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 10px;
+
+    padding: 10px;
+}
+
+.bagian-foto {
+    text-align: center;
+}
+
+.bagian-teks {
+    padding: 20px 25px;
+
+    text-align: left;
+}
+
+.bagian-teks h2 {
+    font-size: 30px;
+}
+
+.bagian-teks p {
+    line-height: 1.9;
+
+    color: #66556e;
+}
+
+.bagian-teks strong {
+    color: #925f98;
+}
+
+
+/* =========================================
+   FOTO AWAN
+========================================= */
+
+.bingkai-awan {
+    position: relative;
+
+    width: 280px;
+    height: 230px;
+
+    margin: auto;
+}
+
+.awan {
+    position: absolute;
+
+    left: 40px;
+    top: 15px;
+
+    width: 200px;
+    height: 180px;
+
+    padding: 8px;
+
+    background: white;
+
+    border: 5px solid #dcaaf0;
+
+    border-radius:
+        45% 45% 40% 40% /
+        50% 50% 40% 40%;
+
+    box-shadow:
+        0 10px 25px rgba(145, 108, 165, 0.18);
+}
+
+.awan::before {
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    left: -28px;
+    bottom: 20px;
+
+    background: white;
+
+    border: 5px solid #dcaaf0;
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+.awan::after {
+    content: "";
+
+    position: absolute;
+
+    width: 85px;
+    height: 85px;
+
+    right: -28px;
+    bottom: 15px;
+
+    background: white;
+
+    border: 5px solid #dcaaf0;
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+.awan img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius:
+        42% 42% 35% 35%;
+}
+
+
+/* =========================================
+   BINTANG DI FOTO
+========================================= */
+
+.bintang-kecil {
+    position: absolute;
+
+    color: #c18ac8;
+
+    font-size: 23px;
+
+    z-index: 5;
+
+    animation: kelapkelip 2s infinite;
+}
+
+.bintang-kecil.satu {
+    top: 0;
+    left: 15px;
+}
+
+.bintang-kecil.dua {
+    top: 30px;
+    right: 5px;
+}
+
+.bintang-kecil.tiga {
+    bottom: 15px;
+    left: 5px;
+}
+
+.bintang-kecil.empat {
+    bottom: 0;
+    right: 15px;
+}
+
+
+@keyframes kelapkelip {
+
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+}
+
+
+/* =========================================
+   BIODATA
+========================================= */
+
+.biodata-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+    margin-top: 25px;
+
+    text-align: left;
+}
+
+.biodata-box,
+.tentang-box {
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbf4ff,
+            #fff2fa
+        );
+
+    border: 1px solid #e6d1ef;
+
+    border-radius: 25px;
+}
+
+.biodata-box h3,
+.tentang-box h3 {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   ITEM BIODATA
+========================================= */
+
+.biodata-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin: 11px 0;
+
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border-radius: 17px;
+}
+
+.ikon {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    background: #ead7f5;
+
+    border-radius: 50%;
+
+    color: #a269a2;
+}
+
+.biodata-item strong {
+    color: #80578e;
+
+    font-size: 14px;
+}
+
+.biodata-item p {
+    margin: 3px 0 0;
+
+    color: #67566d;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TENTANG SAYA
+========================================= */
+
+.tentang-box p {
+    line-height: 1.75;
+
+    color: #66556e;
+
+    font-size: 14px;
+}
+
+.tentang-box strong {
+    color: #925f98;
+}
+
+
+/* =========================================
+   TABEL
+========================================= */
+
+.tabel-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-top: 20px;
+
+    border-radius: 18px;
+}
+
+table {
+    width: 100%;
+
+    min-width: 1000px;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th {
+    padding: 12px 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ad8ac9,
+            #d39bc1
+        );
+
+    color: white;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+td {
+    padding: 11px 8px;
+
+    border: 1px solid #eadcf1;
+
+    color: #66556e;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #fcf6ff;
+}
+
+tbody tr:hover {
+    background: #f8e5f3;
+}
+
+.total th {
+    background: #a887c1;
+}
+
+
+/* =========================================
+   TOMBOL
+========================================= */
+
+button {
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ad8aca,
+            #cf91bf
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(140, 100, 160, 0.20);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 20px rgba(140, 100, 160, 0.28);
+}
+
+.tombol {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   KONTAK
+========================================= */
+
+.teks-kontak {
+    max-width: 650px;
+
+    margin: 20px auto;
+
+    line-height: 1.8;
+
+    color: #66556e;
+}
+
+.kontak-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    max-width: 800px;
+
+    margin: 30px auto;
+}
+
+.kontak-item {
+    padding: 28px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fcf5ff,
+            #fff2fa
+        );
+
+    border: 1px solid #e6d1ef;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(125, 92, 145, 0.08);
+}
+
+.kontak-ikon {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    margin: auto;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b287ca,
+            #cf8fbd
+        );
+
+    border-radius: 50%;
+
+    font-size: 23px;
+}
+
+.kontak-item h3 {
+    margin-bottom: 8px;
+}
+
+.kontak-item p {
+    color: #79677e;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.kontak-item a {
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a986c5,
+            #cc8ebd
+        );
+
+    border-radius: 30px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.kontak-item a:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(140, 100, 160, 0.2);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 50px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d3b9e8,
+            #efc4dc
+        );
+
+    color: #665272;
+
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.footer-hiasan {
+    color: #9a719e;
+
+    letter-spacing: 5px;
+}
+
+footer p {
+    margin: 5px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media (max-width: 750px) {
+
+    header h1 {
+        font-size: 33px;
+    }
+
+    nav {
+        width: 94%;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 8px 12px;
+
+        font-size: 13px;
+    }
+
+    .halaman {
+        padding: 25px 17px;
+    }
+
+    .profil-layout,
+    .biodata-layout,
+    .kontak-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .bagian-teks {
+        padding: 10px;
+    }
+
+    .bagian-teks p {
+        text-align: left;
+    }
+
+    .tombol {
+        flex-wrap: wrap;
+    }
+
+}
