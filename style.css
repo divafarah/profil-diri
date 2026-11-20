@@ -880,3 +880,46 @@ footer p {
     }
 
 }
+/* =========================================
+   LINK APLIKASI
+========================================= */
+
+.app-links {
+    margin-top: 22px;
+    text-align: left;
+}
+
+.app-links h3 {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.app-link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    margin-bottom: 12px;
+    padding: 14px 17px;
+
+    background: #fbf4ff;
+    border: 1px solid #e6d1ef;
+    border-radius: 16px;
+}
+
+.app-link-item strong {
+    color: #80578e;
+}
+
+.app-link-item a {
+    color: #925f98;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.app-link-item a:hover {
+    color: #bd83bd;
+    text-decoration: underline;
+}
